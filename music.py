@@ -26,6 +26,7 @@ def music_analysis():
         else:
             print("请选上面有的")      
     musicId = input("请输入要解析的音乐id>>>>>>>:")
+    print("正在解析.......")
     params={
         "type":musicType,
         "id":musicId
