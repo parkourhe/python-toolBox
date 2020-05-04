@@ -1,6 +1,6 @@
-import aboutMe
+import aboutMe as A
 import expression as E
-import imgDownload
+import imgDownload as I
 import music as M
 import showlogo
 import weather as W
@@ -38,13 +38,15 @@ def selectMenu():
             print("="*20+"音乐解析"+"="*20)
             M.showMusicHtml()
         elif str(userSelectM) == '4':
-            print("图片下载")
+            print("="*20+"图片下载"+"="*20)
+            I.imgMain()
         elif str(userSelectM) == "5":
             print("="*20+"表情包生成"""+"="*20)
             word = input("请输入你在表情包上生成的字>>>>>>>>>:")
             E.genImage(word)   
         elif str(userSelectM) == '6':
-            print("关于我")        
+            print("="*20+"表情包生成"""+"="*20)
+            A.aMain()        
         elif str(userSelectM) == '7':
             userSelect=1 
         else:
